@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: f721hq2zr-java-springboot
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: f721hq2zr-java-springboot 
+  name: f721hq2zr-java-springboot
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: f721hq2zr-java-springboot 
